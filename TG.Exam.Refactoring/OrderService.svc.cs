@@ -37,16 +37,23 @@ namespace TG.Exam.Refactoring
                         return cache[orderId];
                     }
                 }
+
                 string queryTemplate =
                   "SELECT OrderId, OrderCustomerId, OrderDate" +
                   "  FROM dbo.Orders where OrderId='{0}'";
+
                 string query = string.Format(queryTemplate, orderId);
+
                 SqlConnection connection =
                   new SqlConnection(this.connectionString);
+
                 SqlCommand command =
                   new SqlCommand(query, connection);
+
                 connection.Open();
+
                 SqlDataReader reader = command.ExecuteReader();
+
                 if (reader.Read())
                 {
                     Order order = new Order
@@ -61,6 +68,7 @@ namespace TG.Exam.Refactoring
                         if (!cache.ContainsKey(orderId))
                             cache[orderId] = order;
                     }
+
                     stopWatch.Stop();
                     logger.InfoFormat("Elapsed - {0}", stopWatch.Elapsed);
                     return order;
