@@ -9,8 +9,8 @@ namespace TG.Exam.WebMVC.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {
-            return View();
+        { 
+            return View(Models.User.GetAll());
         }
 
         public ActionResult About()
