@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.106
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TG.Exam.OOP", "TG.Exam.OOP\TG.Exam.OOP.csproj", "{8BF42E64-0AE6-4362-B26A-F124FF5B461C}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TG.Exam.Refactoring", "TG.Exam.Refactoring\TG.Exam.Refactoring.csproj", "{D920ADC4-2CD5-40B0-9BAA-96CA5F153D2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TG.Exam.Algorithms", "TG.Exam.Algorithms\TG.Exam.Algorithms.csproj", "{F9F018F7-31BF-46E2-ACDD-8C6F500FEC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TG.Exam.UnitTests", "TG.Exam.UnitTests\TG.Exam.UnitTests.csproj", "{11758564-1FBB-439E-8F8D-CA7E28D0BAD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{F9F018F7-31BF-46E2-ACDD-8C6F500FEC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9F018F7-31BF-46E2-ACDD-8C6F500FEC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9F018F7-31BF-46E2-ACDD-8C6F500FEC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11758564-1FBB-439E-8F8D-CA7E28D0BAD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11758564-1FBB-439E-8F8D-CA7E28D0BAD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11758564-1FBB-439E-8F8D-CA7E28D0BAD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11758564-1FBB-439E-8F8D-CA7E28D0BAD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
