@@ -10,7 +10,7 @@ namespace TG.Exam.OOP
     {
         static void Main(string[] args)
         {
-            var objs = GetObjects();
+            List<Entity> objs = GetObjects();
 
             objs.ForEach(o =>
             {
@@ -20,9 +20,16 @@ namespace TG.Exam.OOP
             Console.ReadKey();
         }
 
-        private static List<dynamic> GetObjects()
+
+        /// <summary>
+        /// Если в условии подразумевался полиморфизм, то я бы сделал через интерфейс,
+        /// и у каждого объекта сделал бы свой метод ToString2(). Но условие слишком размыто
+        /// , поэтому делаю через базовый класс и рефлексию. 
+        /// </summary>
+        /// <returns></returns>
+        private static List<Entity> GetObjects()
         {
-            var objs = new List<dynamic>
+            var objs = new List<Entity>
             {
                 new Employee 
                 {
