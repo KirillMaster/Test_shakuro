@@ -8,6 +8,7 @@ namespace TG.Exam.Refactoring
     public interface IOrderService
     {
         [OperationContract]
+        [FaultContract(typeof(ApplicationFault))]
         Order LoadOrder(string orderId);
     }
 
@@ -23,5 +24,17 @@ namespace TG.Exam.Refactoring
 
         [DataMember]
         public DateTime OrderDate { get; set; }
+    }
+
+    [DataContract]
+    public class ApplicationFault
+    {
+        [DataMember]
+        public string Message { get; set;}
+
+        public ApplicationFault(string message)
+        {
+            Message = message;
+        }
     }
 }
